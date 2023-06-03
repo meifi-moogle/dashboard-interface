@@ -1,0 +1,99 @@
+*,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+    font: inherit;
+    font-family: Helvetica, sans-serif;
+  }
+
+  :root {
+    --color-purple-main: #8072da;
+    --color-purple-secondary: #7972da;
+    --color-black: #2e2e2e;
+    --color-gray: rgb(222, 231, 236);
+
+    --gap: 0.5rem;
+  }
+  .iconify {
+    color: black;
+  }
+
+  body {
+    background-color: var(--color-gray);
+  }
+
+  .header, .nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+  }
+  .left, .right {
+    display: flex;
+  }
+
+  .search-icon, .bell-icon {
+    font-size: 22px;
+  }
+
+  .header-pfp {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+
+  .nav-pfp {
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: pink;
+  }
+
+  .card {
+    width: 20rem;
+  }
+
+
+  .sidebar {
+    background-color: var(--color-purple-secondary);
+  }
+
+
+
+
+
+
+
+
+  input {
+    border-radius: 18px;
+    border-style: none;
+    background-color: var(--color-gray);
+    height: 1.4rem;
+    width: 35rem;
+  }
+
+  button {
+    color: white;
+    background-color: var(--color-purple-main);
+    font-weight: 600;
+    padding: 10px 32px;
+    border-style: none;
+    border-radius: 18px;
+  }
+
+  .buttons-list ul {
+    display: flex;
+    gap: var(--gap);
+  }
+  ul {
+    list-style: none;
+  }
