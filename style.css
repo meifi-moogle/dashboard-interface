@@ -15,8 +15,6 @@
     --color-purple-secondary: #7972da;
     --color-black: #2e2e2e;
     --color-gray: rgb(222, 231, 236);
-
-    --gap: 0.5rem;
   }
 
   body {
@@ -40,10 +38,14 @@
   .header, .nav {
     background-color: white;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    padding: 16px 32px;
   }
   .left, .right {
     display: flex;
+    align-items: center;
+    gap: 1rem;
   }
 
   .sidebar {
@@ -163,7 +165,7 @@
 
   .buttons-list ul {
     display: flex;
-    gap: var(--gap);
+    gap: 2.5rem;
   }
 
   .card-links ul {
