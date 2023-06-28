@@ -19,6 +19,7 @@
     --color-purple-secondary: #7972da;
     --color-black: #2e2e2e;
     --color-gray: rgb(222, 231, 236);
+    --color-clear-text: rgb(92, 101, 110);
   }
 
   body {
@@ -37,6 +38,7 @@
   }
   .nav {
     grid-column: 2 / 3;
+    box-shadow: 0 7px 6px -6px var(--color-black);
   }
   .nav .welcome-msg {
     font-size: .8rem;
@@ -71,7 +73,7 @@
 
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 3rem;
     line-height: 2.5rem;
   }
   .flex-group {
@@ -79,6 +81,10 @@
     align-items: center;
     gap: .5rem;
     margin-left: 1.5rem;
+  }
+  .logo {
+    font-size: 1.3rem;
+    margin-top: 1rem;
   }
 
   .cards-container {
@@ -103,23 +109,28 @@
   }
 
   .card {
-    /* width: 22rem;
-    height: 12rem; */
     font-size: 1.1rem;
+    /* width: 24rem;
+    height: 14rem; */
     width: 24rem;
-    height: 14rem;
+    height: 13rem;
+ 
     background-color: white;
     border-radius: 6px;
     padding: 16px;
-    /* margin: 0.5rem 1rem 1rem 1rem; */
-    margin: .7rem 0 .3rem 1rem;
+    /* margin: .7rem 0 .3rem 1rem; */
+    margin-block: .7rem;
+    margin-left: 1.5rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
   }
-
+  .strip {
+    border-left: 9px solid var(--color-purple-main);
+  }
+  
   .card-links {
-    margin: auto 2rem 1rem auto;
+    margin: auto 2rem .5rem auto;
   }
 
   @media (width > 1600px) {
@@ -131,8 +142,7 @@
 
   .card-long {
     width: 19rem;
-    height: 18rem; 
-
+    height: 18.5rem; 
     gap: .3rem;
     margin-right: 3rem;
   }
@@ -142,14 +152,23 @@
   }
   .announcements p {
     font-size: .8rem;
+    margin-bottom: .5rem;
+  }
+  .bottom-line {
+    border-bottom: 1px solid rgb(159, 168, 176);
+    padding-bottom: .9rem;
   }
  
-
 
 
   .trending {
     font-size: .9rem;
     line-height: 1.2rem;
+    height: 17rem;
+  }
+  
+  .small-name {
+    font-size: 0.850rem;
   }
   .profile-container {
     display: flex;
@@ -202,7 +221,7 @@
     color: white;
     background-color: var(--color-purple-main);
     /* font-weight: 600; */
-    padding: 10px 32px;
+    padding: 9px 32px;
     border-style: none;
     border-radius: 18px;
   }
@@ -219,21 +238,9 @@
     gap: 2.5rem;
   }
 
-  .card-links ul {
-    display: flex;
-    gap: 2rem;
-  }
-
-  a {
-    text-decoration: none;
-  }
-  ul {
-    list-style: none;
-  }
   .search-icon, .bell-icon {
     font-size: 22px;
   }
-
   .header-pfp, .card-long img {
     border-radius: 50%;
     width: 40px;
@@ -246,8 +253,8 @@
   }
 
   .right-cards {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
   }
 
 
@@ -255,11 +262,24 @@
   .header, .nav, .sidebar {
     font-weight: 600;
   }
-  .projects-announcements-titles, .sub-title {
+  .projects-announcements-titles, .sub-title, .title {
     font-weight: 500;
   }
-  
-
   .announcements p, .profile-info p {
-    color: rgb(92, 101, 110);
+    color: var(--color-clear-text);
+  }
+
+  .card-links ul {
+    display: flex;
+    gap: 2rem;
+  }
+  .card-links a {
+    color: black;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  ul {
+    list-style: none;
   }
