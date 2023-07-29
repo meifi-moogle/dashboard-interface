@@ -28,8 +28,10 @@
 
   .container {
     min-height: 100vh;
+    width: 100vw;
     display: grid;
-    grid-template-columns: minmax(10px, 16rem) minmax(10px, 3fr);
+    /* grid-template-columns: minmax(10px, 16rem) minmax(10px, 3fr); */
+    grid-template-columns: minmax(10px, 17rem) minmax(10px, 3fr);
     grid-template-rows: min-content min-content min-content 3fr;
   }
 
@@ -73,8 +75,11 @@
 
     display: flex;
     flex-direction: column;
-    gap: 3rem;
-    line-height: 2.5rem;
+    /* gap: 3rem; */
+    gap: 2.5rem;
+    /* line-height: 2.5rem; */
+    line-height: 2.6rem;
+    font-size: 1.2rem;
   }
   .flex-group {
     display: flex;
@@ -83,7 +88,12 @@
     margin-left: 1.5rem;
   }
   .logo {
-    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+
+    /* font-size: 1.3rem; */
+    font-size: 1.5rem;
     margin-top: 1rem;
   }
 
@@ -110,8 +120,7 @@
 
   .card {
     font-size: 1.1rem;
-    /* width: 24rem;
-    height: 14rem; */
+
     width: 24rem;
     height: 13rem;
  
@@ -141,15 +150,14 @@
   }
 
   .card-long {
-    width: 19rem;
+    /* width: 19rem; */
+    width: 17.5rem;
     height: 18.5rem; 
     gap: .3rem;
-    margin-right: 3rem;
+    /* margin-right: 3rem; */
+    margin-right: 2rem;
   }
 
-  .announcements div {
-    font-size: .9rem;
-  }
   .announcements p {
     font-size: .8rem;
     margin-bottom: .5rem;
@@ -159,17 +167,17 @@
     padding-bottom: .9rem;
   }
  
-
+.font-small {
+  font-size: .9rem;
+}
 
   .trending {
-    font-size: .9rem;
+    width: 17rem;
+
     line-height: 1.2rem;
     height: 17rem;
   }
   
-  .small-name {
-    font-size: 0.850rem;
-  }
   .profile-container {
     display: flex;
     gap: .7rem;
@@ -220,23 +228,18 @@
   button {
     color: white;
     background-color: var(--color-purple-main);
-    /* font-weight: 600; */
     padding: 9px 32px;
     border-style: none;
     border-radius: 18px;
   }
 
 
-  .logo {
-    display: flex;
-    align-items: center;
-    gap: .5rem;
-  }
-
   .buttons-list ul {
     display: flex;
     gap: 2.5rem;
   }
+
+
 
   .search-icon, .bell-icon {
     font-size: 22px;
@@ -252,12 +255,6 @@
     height: 65px;
   }
 
-  .right-cards {
-    /* display: flex;
-    flex-direction: column; */
-  }
-
-
 
   .header, .nav, .sidebar {
     font-weight: 600;
@@ -265,8 +262,14 @@
   .projects-announcements-titles, .sub-title, .title {
     font-weight: 500;
   }
+
   .announcements p, .profile-info p {
     color: var(--color-clear-text);
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
   }
 
   .card-links ul {
@@ -277,9 +280,6 @@
     color: black;
   }
 
-  a {
-    text-decoration: none;
-  }
   ul {
     list-style: none;
   }
