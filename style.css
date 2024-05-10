@@ -23,6 +23,7 @@
 
   body {
     background-color: var(--color-gray);
+    overflow-x: hidden;
   }
 
   .container {
