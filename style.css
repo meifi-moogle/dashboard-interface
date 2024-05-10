@@ -108,8 +108,8 @@
 
   .projects-announcements-titles {
     grid-column: 1 / -1;
-    margin-left: 1rem;
-    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+    margin-top: 1.7vw;
   }
 
   .card {
@@ -272,4 +272,7 @@
 
   ul {
     list-style: none;
+  }
+  svg, button, .sidebar-item, .profile-container, .logo {
+    cursor: pointer;
   }
